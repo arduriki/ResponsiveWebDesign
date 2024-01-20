@@ -1,0 +1,18 @@
+Why reset box-model?
+The browser includes the border and padding when determining an element's size.
+
+#######
+
+The letter-spacing property can be used to adjust the space between each character of text in an element.
+
+#######
+
+The :not pseudo-selector can be used to select all elements that do not match the given CSS rule.
+
+div:not(#example) {
+  color: red;
+}
+The above selects all div elements without an id of example.
+
+#######
+

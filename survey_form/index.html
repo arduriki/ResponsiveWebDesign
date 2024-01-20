@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="arduriki" />
+    <meta
+      name="description"
+      content="This page contains a sample survey form for Efforwai"
+    />
+    <title>Efforwai Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Efforwai Survey Form</h1>
+      <p id="description">
+        Thank you for taking the time to help us improve our company
+      </p>
+    </header>
+    <main>
+      <article id="survey">
+        <form action="https://httpbin.org/get" method="get" id="survey-form">
+          <fieldset>
+            <p>
+              <label for="name" id="name-label">Name:</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="your name"
+                autocomplete="on"
+                required
+              />
+            </p>
+						<hr>
+            <p>
+              <label for="email" id="email-label">Email:</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="your email"
+                autocomplete="on"
+                required
+              />
+            </p>
+						<hr>
+            <p>
+              <label for="phone" id="number-label">Phone:</label>
+              <input
+                type="number"
+                id="number"
+								name="number"
+								min="9"
+								max="12"
+								placeholder="123456789"
+                required
+              />
+            </p>
+						<hr>
+						<p>
+							<label for="dog-names">Choose a dog name:</label>
+							<select name="dog-names" id="dropdown">
+								<option value="rigatoni">Rigatoni</option>
+								<option value="reeses">Reeses</option>
+							</select>
+						</p>
+						<hr>
+						<p>
+							<p>What is your favorite food?</p>
+              <input type="radio" name="food" id="tacos" value="tacos" />
+              <label for="tacos">Tacos</label>
+            </p>
+            <p>
+              <input type="radio" name="food" id="pizza" value="pizza" />
+              <label for="pizza">Pizza</label>
+            </p>
+            <p>
+              <input type="radio" name="food" id="other" value="other" />
+              <label for="other">Tacos</label>
+            </p>
+						<hr>
+						<p>
+							<p>Do you have pets?</p>
+              <input type="checkbox" name="pets" id="dog" value="dog" />
+              <label for="dog">Dog</label>
+            </p>
+            <p>
+              <input type="checkbox" name="pets" id="cat" value="cat" />
+              <label for="cat">Cat</label>
+            </p>
+            <p>
+              <input type="checkbox" name="pets" id="fish" value="fish" />
+              <label for="fish">Fish</label>
+            </p>
+            <p>
+              <input type="checkbox" name="pets" id="other" value="other" />
+              <label for="other">Other</label>
+            </p>
+						<hr>
+						<p>
+							<label for="message">Your Message:</label>
+            <br />
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Type your message here"
+            ></textarea>
+						</p>
+          </fieldset>
+					<br />
+          <button type="submit" id="submit">Submit</button>
+          <!-- Override info submitted -->
+          <button
+            type="submit"
+            formaction="https://httpbin.org/post"
+            formmethod="post"
+          >
+            Post
+          </button>
+        </form>
+      </article>
+    </main>
+    <footer></footer>
+  </body>
+</html>
